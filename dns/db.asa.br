@@ -1,0 +1,22 @@
+$TTL 86400
+@    IN    SOA   ns1.asa.br. admin.asa.br. (
+               2024121904 ; serial
+               3600       ; refresh
+               1800       ; retry
+               1209600    ; expire
+               86400 )    ; TTL
+
+     IN    NS    ns1.asa.br.
+
+; Registros A
+@                 IN    A     127.0.0.1
+ns1.asa.br.       IN    A     127.0.0.1
+ns.victor         IN    A     127.0.0.1
+mail.victor              IN    A     127.0.0.1
+proxy.victor      IN    A     127.0.0.1
+www.proxy.victor      IN    A     127.0.0.1
+www.victor        IN    A     127.0.0.1
+victor            IN    A     127.0.0.1
+
+; Registro MX
+@                 IN    MX    10 mail.victor
